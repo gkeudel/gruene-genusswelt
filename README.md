@@ -1,2 +1,2 @@
 # gruene-genusswelt
- only a html test prject
+ only a html test project
