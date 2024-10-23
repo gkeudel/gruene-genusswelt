@@ -1,0 +1,261 @@
+@import url("../css/variables.css");
+
+/* Header */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    padding: 0 1rem;
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.icons {
+    gap: 0.8rem;
+}
+
+/* Hero */
+.hero {
+    background-image: url("../img/rezepte-hero.jpg");
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cta {
+    background-color: var(--base);
+    width: 50%;
+    height: auto;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-left: 10vw;
+    max-width: 800px;
+}
+
+.cta-text {
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.buttons-container {
+    gap: 0.8rem;
+}
+
+/* Neue Rezepte */
+.neue-rezepte {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card-container {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat (auto-fit, minimax(272px, 1fr));
+    /* display: flex; */
+    gap: 2rem;
+    /* flex-wrap: wrap; */
+}
+
+.card {
+    border: 1px solid var(--light);
+    box-shadow: 8px 8px 24px #E0E0E0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.2rem;
+    /* flex: 1 1 300px; */
+
+}
+
+/* About Section */
+.about {
+    background-color: var(--base);
+    flex-wrap: wrap;
+    gap: 3.2rem;
+    align-items: center;
+}
+
+.about div {
+    flex: 0 1 590px;
+}
+
+/* Newsletter */
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+.newsletter {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.newsletter-form {
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.checkboxes {
+    gap: 1.2rem;
+    flex-wrap: wrap;
+}
+
+.checkbox-1,
+.checkbox-2 {
+    gap: 0.4rem;
+    accent-color: grey;
+}
+
+.anmelden {
+    gap: 0.8rem;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+.anmelden div {
+    flex-direction: column;
+}
+
+.anmelden input[type=email] {
+    width: 24rem;
+    height: 2.4rem;
+}
+
+/* footer */
+footer {
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+footer i {
+    color: var(--light);
+    font-size: 2rem;
+}
+
+.social-icons {
+    gap: 2rem;
+}
+
+/* Hamburger Navigation */
+.hamburger {
+    display: none;
+}
+
+/* Overlay */
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+.overlay {
+    height: 100vh;
+    width: 50%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.overlay-content ul {
+    flex-direction: column;
+    gap: 1rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Media Queries */
+@media screen and (width<=992px) {
+    html {
+        font-size: 100%;
+    }
+
+    .cta {
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+        opacity: 90%;
+    }
+
+    .buttons-container {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .buttons-container a {
+        width: 14rem;
+    }
+}
+
+@media screen and (width<=576px) {
+
+    /* Nav */
+    nav {
+        padding: 3rem;
+    }
+
+    nav .icons,
+    nav a {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        color: var(--dark);
+        font-size: 2rem;
+    }
+
+    .hero {
+        background-image: url("../img/rezepte-hero-smartphone.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: flex-end;
+    }
+
+    .cta {
+        width: auto;
+        padding: 2.4rem 0.8rem;
+    }
+
+    /* Neue Rezepte */
+    .card-container {
+        width: 90%;
+    }
+
+    .card {
+        text-align: center;
+        align-items: center;
+    }
+
+    /* about */
+    .about {
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    /* Newsletter */
+
+    .anmelden input[type="email"] {
+        width: 100%;
+    }
+
+    .anmelden div {
+        width: 100%;
+    }
+}

@@ -1,0 +1,11 @@
+/* custom properties */
+:root {
+    --primary: #116156;
+    --secondary: #EDAA05;
+    --base: #FFF3E3;
+    --light: #E0E0E0;
+    --dark: #424242;
+    --display-text: "Libre Baskerville", Times, serif;
+    --body-text: "Hind Madurai", Arial, sans-serif;
+    --subheading: "Lora", Times, serif;
+}
